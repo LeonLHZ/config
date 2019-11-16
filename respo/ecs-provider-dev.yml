@@ -6,3 +6,15 @@ spring:
 server:
   port: 8099
 
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  #注册地址
+  client:
+    service-url:
+      defaultZone: http://www.lhz520.cn:8761/eureka/
+
+
+
