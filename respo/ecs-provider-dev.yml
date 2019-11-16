@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    include:
+        - eureka
+        - mybatis
+
+server:
+  port: 8099
+
