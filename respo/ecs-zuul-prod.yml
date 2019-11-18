@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ecs-zuul
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://www.lhz520.cn:8761/eureka/
+
+zuul:
+  routes:
+    api-customer:
+      path: /api/customer/**
+      serviceId: ecs-customer
+    api-b:
+      path: /api/b/**
+      serviceId: hello-spring-cloud-web-admin-feign
