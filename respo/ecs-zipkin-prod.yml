@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ecs-zipkin
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://www.lhz520.cn:8761/eureka/
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
