@@ -3,6 +3,10 @@ spring:
     name: ecs-zipkin
   main:
       allow-bean-definition-overriding: true
+  boot:
+      admin:
+        client:
+          url: http://94.191.119.1927:8084
 
 server:
   port: 8082
