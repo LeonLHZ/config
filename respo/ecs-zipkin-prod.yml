@@ -6,7 +6,7 @@ spring:
   boot:
       admin:
         client:
-          url: http://94.191.119.1927:8084
+          url: http://94.191.119.192:8083
 
 server:
   port: 8082
