@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: ecs-zuul
+  zipkin:
+    base-url: http://94.191.119.192:8082
+   boot:
+        admin:
+          client:
+            url: http://94.191.119.192:8083
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://www.lhz520.cn:8761/eureka/
+
+
+zuul:
+  routes:
+    api-customer:
+      path: /api/customer/**
+      serviceId: ecs-customer
+    api-b:
+      path: /api/b/**
+      serviceId: hello-spring-cloud-web-admin-feign
