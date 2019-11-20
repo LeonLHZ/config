@@ -2,7 +2,11 @@ spring:
   application:
     name: ecs-zuul
   zipkin:
-    base-url: http://www.lhz520.cn:8082
+    base-url: http://94.191.119.192:8082
+   boot:
+        admin:
+          client:
+            url: http://94.191.119.192:8083
 server:
   port: 8081
 eureka:
