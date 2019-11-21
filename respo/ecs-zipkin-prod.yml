@@ -29,7 +29,7 @@ management:
         include: "*"
 
 logging:
-  file: /root/ecs/zipkin-logs.log
+  file: "/root/ecs/zipkin-log.log"
   level:
     cn.lhz: debug
   pattern:

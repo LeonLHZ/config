@@ -24,7 +24,7 @@ eureka:
       defaultZone: http://www.lhz520.cn:8761/eureka/
 
 logging:
-  file: /root/ecs/admin-logs.log
+  file: "/root/ecs/admin-log.log"
   level:
     cn.lhz: debug
   pattern:
