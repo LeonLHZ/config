@@ -21,3 +21,8 @@ spring:
          service-base-url: http://www.lhz520.cn:8761
   zipkin:
     base-url: http://94.191.119.192:8082
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
