@@ -22,8 +22,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://www.lhz520.cn:8761/eureka/
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
