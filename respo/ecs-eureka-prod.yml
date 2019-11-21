@@ -1,7 +1,7 @@
 #eueka 主机名
 eureka:
   instance:
-    hostname: eureka-service
+    hostname: ecs-eureka
   client:
   #不注册自己
     register-with-eureka: false
