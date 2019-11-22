@@ -25,6 +25,9 @@ spring:
       ansi:
         enabled: always
 management:
+  endpoint:
+    health:
+      show-details: always
   endpoints:
     web:
       exposure:

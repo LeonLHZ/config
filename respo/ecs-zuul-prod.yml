@@ -29,6 +29,9 @@ zuul:
       path: /api/b/**
       serviceId: hello-spring-cloud-web-admin-feign
 management:
+  endpoint:
+    health:
+      show-details: always
   endpoints:
     web:
       exposure:
