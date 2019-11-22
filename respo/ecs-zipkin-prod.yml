@@ -9,6 +9,9 @@ spring:
           url: http://94.191.119.192:8083
           instance:
             service-base-url: http://94.191.119.192:8082
+  output:
+      ansi:
+        enabled: always
 
 server:
   port: 8082
