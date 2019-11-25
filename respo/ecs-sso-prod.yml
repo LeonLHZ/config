@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: ecs-sso
+  zipkin:
+    base-url: http://94.191.119.192:8082
+  boot:
+    admin:
+      client:
+        url: http://120.24.95.233:8083
+        #instance:
+           # service-base-url: http://120.79.63.162:8081
+  output:
+      ansi:
+        enabled: always
+server:
+  port: 8086
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://120.79.63.162:8761/eureka/
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

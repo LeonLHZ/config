@@ -9,6 +9,7 @@ spring:
           url: http://120.24.95.233:8083
           instance:
             service-base-url: http://94.191.119.192:8082
+  #彩色日志开启
   output:
       ansi:
         enabled: always
