@@ -4,7 +4,6 @@ spring:
   zipkin:
     base-url: http://94.191.119.192:8082
   freemarker:
-      temlate-loader-path: classpath:/templates
       #关闭缓存，即时刷新
       cache: false
       charset: UTF-8
@@ -12,10 +11,11 @@ spring:
       content-type: text/html
       expose-request-attributes: true
       expose-session-attributes: true
-      request-context-attributes: request
       suffix: .ftl
-    resources:
-      static-locations: classpath:/static
+      template-loader-path: classpath:/templates
+      request-context-attribute: request
+  resources:
+    static-locations: classpath:/static
   boot:
     admin:
       client:
