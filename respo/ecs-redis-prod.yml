@@ -8,7 +8,7 @@ spring:
         instance:
             service-base-url: http://94.191.119.192:8084
   zipkin:
-    base-url: http://94.191.119.192:8082
+    base-url: http://116.62.156.171:8082
   redis:
    # Redis数据库索引（默认为0）
      database: 0
@@ -39,7 +39,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://120.79.63.162:8761/eureka/
+      defaultZone: http://116.62.156.171:8761/eureka/
 
 management:
   endpoint:

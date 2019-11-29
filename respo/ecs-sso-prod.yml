@@ -19,7 +19,7 @@ spring:
     filters: stat,wall,logback
     logSlowSql: true
   zipkin:
-    base-url: http://94.191.119.192:8082
+    base-url: http://116.62.156.171:8082
   freemarker:
       #关闭缓存，即时刷新
       cache: false
@@ -47,7 +47,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://120.79.63.162:8761/eureka/
+      defaultZone: http://116.62.156.171:8761/eureka/
 
 
 management:
