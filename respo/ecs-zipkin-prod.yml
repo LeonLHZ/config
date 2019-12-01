@@ -20,7 +20,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http:/116.62.156.171:8761/eureka/
+      defaultZone: http://116.62.156.171:8761/eureka/
 
 management:
   metrics:
