@@ -23,6 +23,8 @@ eureka:
     prefer-ip-address: true
     ip-address: 120.79.63.162
     non-secure-port: 8081
+server:
+  port: 8081
 
 
 zuul:
