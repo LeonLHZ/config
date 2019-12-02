@@ -37,9 +37,6 @@ zuul:
     api-admin:
       path: /admin/**
       serviceId: ecs-admin
-    api-eureka:
-      path: /eureka/**
-      serviceId: ecs-eureka
 management:
   endpoint:
     health:
