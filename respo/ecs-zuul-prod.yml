@@ -21,13 +21,20 @@ eureka:
 
 
 zuul:
+  prefix: /api
   routes:
-    api-customer:
-      path: /api/customer/**
-      serviceId: ecs-customer
-    api-b:
-      path: /api/b/**
-      serviceId: hello-spring-cloud-web-admin-feign
+    api-config:
+      path: /config/**
+      serviceId: ecs-config
+    api-zipkin:
+      path: /zipkin/**
+      serviceId: ecs-zipkin
+    api-admin:
+      path: /admin/**
+      serviceId: ecs-admin
+    api-eureka:
+      path: /eureka/**
+      serviceId: ecs-eureka
 management:
   endpoint:
     health:
