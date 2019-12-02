@@ -38,10 +38,6 @@ server:
 
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://116.62.156.171:8761/eureka/
-eureka:
-  client:
     register-with-eureka: true
     service-url:
         defaultZone: http://116.62.156.171:8761/eureka/
