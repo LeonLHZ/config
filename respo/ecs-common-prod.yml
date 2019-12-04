@@ -17,10 +17,9 @@ eureka:
     service-url:
         defaultZone: http://116.62.156.171:8761/eureka/
   instance:
-    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${eureka.instance.non-secure-port}
+    instance-id: ${server.address}:${spring.application.name}:${server.port}
     prefer-ip-address: true
-    ip-address: ${server.address}
-    non-secure-port: ${server.port}
+
 management:
   endpoint:
     health:
