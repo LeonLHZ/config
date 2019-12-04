@@ -7,7 +7,7 @@ spring:
          url: http://120.24.95.233:8083
          instance:
              prefer-ip: true
-             service-base-url: http://${ip}:${server.port}
+             service-base-url: http://${server.address}:${server.port}
   output:
         ansi:
           enabled: always
@@ -19,7 +19,7 @@ eureka:
   instance:
     instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${eureka.instance.non-secure-port}
     prefer-ip-address: true
-    ip-address: ${ip}
+    ip-address: ${server.address}
     non-secure-port: ${server.port}
 management:
   endpoint:

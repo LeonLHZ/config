@@ -3,7 +3,7 @@ spring:
     name: ecs-zuul
 server:
   port: 8081
-ip: 120.79.63.162
+  address: 120.79.63.162
 
 zuul:
   prefix: /api
