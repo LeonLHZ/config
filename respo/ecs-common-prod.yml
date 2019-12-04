@@ -2,20 +2,25 @@ spring:
   zipkin:
     base-url: http://116.62.156.171:8082
   boot:
-    admin:
-      client:
-        url: http://120.24.95.233:8083
+     admin:
+       client:
+         url: http://120.24.95.233:8083
+         instance:
+             prefer-ip: true
+             service-base-url: http://${ip}:${server.port}
   output:
         ansi:
           enabled: always
 eureka:
-    client:
-      register-with-eureka: true
-      service-url:
-          defaultZone: http://116.62.156.171:8761/eureka/
-    instance:
-      instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${eureka.instance.non-secure-port}
-      prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    service-url:
+        defaultZone: http://116.62.156.171:8761/eureka/
+  instance:
+    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${eureka.instance.non-secure-port}
+    prefer-ip-address: true
+    ip-address: ${ip}
+    non-secure-port: ${server.port}
 management:
   endpoint:
     health:
