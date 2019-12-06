@@ -1,0 +1,27 @@
+spring:
+  zipkin:
+    base-url: http://116.62.156.171:8082
+  boot:
+      admin:
+        client:
+          url: http://120.24.95.233:8083
+  output:
+      ansi:
+        enabled: always
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        # 注意：此处在视频里是 include: ["health", "info"] 但已无效了，请修改
+        #include: health,info
+        include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://116.62.156.171:8761/eureka/
