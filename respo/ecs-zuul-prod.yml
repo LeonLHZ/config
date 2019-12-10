@@ -40,6 +40,9 @@ zuul:
     api-admin:
       path: /admin/**
       serviceId: ecs-admin
+    api-sso:
+      path: /sso/**
+      serviceId: ecs-sso
 management:
   endpoint:
     health:
