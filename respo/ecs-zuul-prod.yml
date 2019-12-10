@@ -29,6 +29,9 @@ server:
 
 
 zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
   routes:
     api-config:
       path: /config/**
@@ -42,6 +45,8 @@ zuul:
     api-sso:
       path: /api/sso/**
       serviceId: ecs-sso
+
+
 management:
   endpoint:
     health:
