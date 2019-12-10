@@ -29,7 +29,6 @@ server:
 
 
 zuul:
-  prefix: /api
   routes:
     api-config:
       path: /config/**
@@ -41,7 +40,7 @@ zuul:
       path: /admin/**
       serviceId: ecs-admin
     api-sso:
-      path: /sso/**
+      path: /api/sso/**
       serviceId: ecs-sso
 management:
   endpoint:
